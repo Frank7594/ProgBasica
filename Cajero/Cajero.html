@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automatico</title>
+</head>
+<body bgcolor="black">
+
+    <font face="Arial Narrow" size=10 color="white">
+        <center>Cajero Automatico </center>
+    </font>
+    <p>
+        <center>
+            <img src="cajero.webp" /><br/><br/>
+            <font face="Arial Narrow" size=3 color="white">
+        
+                ¿Cuántas dinero necesitas sacar? <br/>
+                <input type="number" placeholder="0" maxlength="3" id="dinero" />
+                
+                
+            </font>
+
+            <input type="button" value="Obtener dinero" id="boton"/>
+            <font face="Arial Narrow" size=5 color="white">
+            <p id="resultado"></p>
+            
+            <input type="button" value="Saldo del Cajero" id="saldo">
+            <input type="button" value="Refrescar Cajero" onclick="javascript:window.location.reload();"/>
+            </font>
+        
+        </center>
+    <script src="Cajero.js">
+
+    </script>
+</body>
+</html>

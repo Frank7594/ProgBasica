@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dibujando curvas con Lineas</title>
+</head>
+<body bgcolor="black">
+    
+    <h1>
+        <font face="Arial Narrow" size=10 color="white">
+            <center>Dibujando Curvas Con Lineas </center>
+        </font>
+    </h1>
+    
+    <p>
+        <center>
+            <font face="Arial Narrow" size=3 color="white">
+        
+                ¿Cuántas lineas quieres? <br/>
+                <input type="text" placeholder="50" maxlength="3" id="texto_lineas" />
+                <br/>
+                <br/>
+            
+                ¿De que tamaño lo quieres?<br/>
+                <input type="text" placeholder="300" maxlength="4" id="t_canvas" />
+                <br/> 
+                <br/>
+                
+                ¿De que Color quieres las lineas?<br/>
+                <input type="color" id="color_ciclo" />
+                <br/>
+                <br/>
+                
+                ¿En que posicion quieres el dibujo?<br/>
+                <select id="lado">
+                <option value="sup_izq">Superior Izquierda</option>
+                <option value="sup_der">Superior Derecha</option>
+                <option value="inf_izq">Inferior Izquierda</option>
+                <option value="inf_der">Inferior Derecha</option>
+                <option value="todo">Todos</option>
+                </select>
+                <br/>
+                <br/>
+
+                <input type="button" value="¡A dibujar!" id="botoncito"/><br/>
+            </font>
+        </center>
+    </p>
+
+    <canvas id="malla"></canvas>
+    <p>Asi queda tu dibujo</p>
+    <script src="Dibujo_boton.js"></script>
+</body>
+</html>
